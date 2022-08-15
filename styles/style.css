@@ -18,6 +18,10 @@
   --yellow-2: #7D5B28;
   --yellow-3: #292218;
   --yellow-active: #ebb563;
+  --gray-1: #909399;
+  --gray-2: #525457;
+  --gray-3: #202121;
+  --gray-active: #a6a9ad;
 }
 .theme-light {
   --bg-primary: #1E1E1E;
@@ -39,6 +43,10 @@
   --yellow-2: #f3d19e;
   --yellow-3: #fdf6ec;
   --yellow-active: #b88230;
+  --gray-1: #909399;
+  --gray-2: #525457;
+  --gray-3: #202121;
+  --gray-active: #a6a9ad;
 }
 body {
   background-color: var(--bg-primary);
@@ -201,4 +209,39 @@ table.MainMenu div.MenuTD table a {
 }
 table.MainMenu div.MenuTD table a:hover {
   font-weight: normal;
+}
+div.SubMenu {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji" !important;
+  height: 55px;
+  background-color: var(--bg-primary);
+  border-color: var(--border-primary);
+}
+div.SubMenu table {
+  height: 100%;
+}
+div.SubMenu a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid var(--gray-2);
+  border-radius: 4px;
+  color: var(--gray-1) !important;
+  background-color: var(--gray-3) !important;
+}
+div.SubMenu a:hover {
+  font-weight: normal;
+  color: var(--blue-1) !important;
+}
+div.SubMenu b {
+  font-weight: normal !important;
+}
+div.SubMenu b a {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji" !important;
+  font-weight: normal !important;
+  color: var(--blue-1) !important;
+  background-color: var(--blue-3) !important;
+  border-color: var(--blue-2) !important;
 }

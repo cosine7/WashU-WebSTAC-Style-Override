@@ -20,4 +20,5 @@
   document.getElementById('HyperLink1').innerHTML = '?'
   document.getElementsByClassName('MenuTD')[0].remove()
   document.querySelectorAll('#MenuTable>tbody>tr>td')[3].remove()
+  document.querySelector('.SubMenu .MenuTD').remove()
 }
