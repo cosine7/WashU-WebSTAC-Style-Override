@@ -1,0 +1,49 @@
+.theme-dark {
+  --bd-primary: #252526;
+  --text-primary: #CFD3DC;
+  --red-1: #F56C6C;
+}
+.theme-light {
+  --bd-primary: #1E1E1E;
+  --red-1: #854040;
+}
+body {
+  background-color: var(--bd-primary);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+div.HeaderDiv {
+  height: 60px;
+  background-color: var(--bd-primary);
+}
+.MasterTitleFont {
+  color: var(--text-primary) !important;
+}
+table.HeaderDiv {
+  position: relative;
+  height: 60px;
+  background-color: var(--bd-primary);
+}
+table.HeaderDiv a[href="http://wustl.edu"] {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bolder;
+  transition: all 0.3s;
+}
+table.HeaderDiv a[href="http://wustl.edu"]:hover {
+  text-shadow: 0 0 2px var(--text-primary);
+}
+table.HeaderDiv a[href="http://wustl.edu"]:visited {
+  color: var(--text-primary);
+}
+table.HeaderDiv tr :first-child {
+  vertical-align: middle !important;
+  width: max-content !important;
+  padding-left: 10px;
+}
+table.HeaderDiv tr :nth-child(2) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+}
