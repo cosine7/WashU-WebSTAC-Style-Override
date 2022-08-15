@@ -1,22 +1,56 @@
 .theme-dark {
-    --bd-primary: #252526;
+    --bg-primary: #252526;
     --text-primary: #CFD3DC;
+    --border-primary: #4C4D4F;
     --red-1: #F56C6C;
+    --red-2: #854040;
+    --red-3: #2B1D1D;
+    --red-active: #f78989;
+    --blue-1: #409EFF;
+    --blue-2: #2A598A;
+    --blue-3: #18222C;
+    --blue-active: #66b1ff;
+    --green-1: #67C23A;
+    --green-2: #3E6B27;
+    --green-3: #1C2518;
+    --green-active: #85ce61;
+    --yellow-1: #E6A23C;
+    --yellow-2: #7D5B28;
+    --yellow-3: #292218;
+    --yellow-active: #ebb563;
 }
 
 .theme-light {
-    --bd-primary: #1E1E1E;
-    --red-1: #854040;
+    --bg-primary: #1E1E1E;
+    --text-primary: black;
+    --border-primary: #DCDFE6;    
+    --red-1: #F56C6C;
+    --red-2: #FAB6B6;
+    --red-3: #FEF0F0;
+    --red-active: #c45656;
+    --blue-1: #409eff;
+    --blue-2: #a0cfff;
+    --blue-3: #ecf5ff;
+    --blue-active: #337ecc;
+    --green-1: #67C23A;
+    --green-2: #B3E19D;
+    --green-3: #F0F9EB;
+    --green-active: #529b2e;
+    --yellow-1: #E6A23C;
+    --yellow-2: #f3d19e;
+    --yellow-3: #fdf6ec;
+    --yellow-active: #b88230;
 }
 
 body {
-    background-color: var(--bd-primary);
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    background-color: var(--bg-primary);
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji" !important;
 }
 
 div.HeaderDiv {
     height: 60px;
-    background-color: var(--bd-primary);
+    background-color: var(--bg-primary);
+    border-bottom: 1px solid var(--border-primary);
 }
 
 .MasterTitleFont {
@@ -26,7 +60,7 @@ div.HeaderDiv {
 table.HeaderDiv {
     position: relative;
     height: 60px;
-    background-color: var(--bd-primary);
+    background-color: var(--bg-primary);
 
     a[href="http://wustl.edu"] {
         text-decoration: none;
@@ -50,12 +84,152 @@ table.HeaderDiv {
             padding-left: 10px;
         }
 
-        :nth-child(2) {
+        #lblTitle {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             font-size: 24px;
+        }
+    }
+
+    #ShibLogin1_HyperLink1 {
+        margin-right: 14px;
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji" !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--blue-2);
+        color: var(--blue-1) !important;
+        background-color: var(--blue-3);
+        padding: 0;
+        box-sizing: border-box;
+        border-radius: 4px;
+        width: 60px !important;
+        height: 30px;
+        transition: all .1s;
+
+        &:hover {
+            color: white !important;
+            background-color: var(--blue-1);
+            border-color: var(--blue-1);
+        }
+
+        &:active {
+            color: white !important;
+            background-color: var(--blue-active);
+            border-color: var(--blue-active);
+        }
+    }
+
+    #ImageButton1 {
+        display: none;
+    }
+
+    td.HomeButtonStyle {
+        padding: 0 10px 0 0;
+    }
+
+    #homeLabel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        border-radius: 50%;
+        border: 1px solid var(--green-2);
+        color: var(--green-1);
+        background-color: var(--green-3);
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        transition: all .1s;
+
+        &:hover {
+            color: white !important;
+            background-color: var(--green-1);
+            border-color: var(--green-1);
+        }
+
+        &:active {
+            color: white !important;
+            background-color: var(--green-active);
+            border-color: var(--green-active);
+        }
+    }
+
+    #HyperLink1 {
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji" !important;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        border-radius: 50%;
+        border: 1px solid var(--yellow-2) !important;
+        color: var(--yellow-1);
+        background-color: var(--yellow-3);
+        width: 30px !important;
+        height: 30px;
+        cursor: pointer;
+        text-decoration: none;
+        padding: 0;
+        transition: all .1s;
+
+        &:hover {
+            color: white !important;
+            background-color: var(--yellow-1);
+            border-color: var(--yellow-1) !important;
+        }
+
+        &:active {
+            color: white !important;
+            background-color: var(--yellow-active);
+            border-color: var(--yellow-active) !important;
+        }
+    }
+}
+
+table.MainMenu {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji" !important;
+    background-color: var(--bg-primary);
+    height: 50px;
+
+    td {
+        text-align: center;
+        font-size: 20px;
+        width: calc(100% / 3);
+        box-sizing: border-box;
+        border: none !important;
+
+        >a {
+            color: var(--text-primary) !important;
+
+            &:hover {
+                font-weight: normal;
+                color: var(--blue-1) !important;
+            }
+        }
+    }
+
+    div.MenuTD {
+        height: 100% !important;
+        background-color: transparent !important;
+        border: none !important;
+        padding: 0;
+
+        table {
+            box-sizing: border-box;
+            border-bottom: 5px solid var(--blue-1);
+            height: 100% !important;
+            width: 100%;
+
+            a {
+                color: var(--blue-1);
+                text-decoration: none;
+
+                &:hover {
+                    font-weight: normal;
+                }
+            }
         }
     }
 }

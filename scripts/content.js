@@ -10,7 +10,14 @@
     switchTheme(e.matches ? 'dark' : 'light');
   });
 
-  const logo = document.getElementById('Image1')
-  logo.parentElement.textContent = 'Washington University in St. Louis'
-  logo.remove()
+  document.getElementById('Image1').parentElement.innerHTML = 'Washington University in St. Louis'
+  document.getElementById('ShibLogin1_HyperLink1').textContent = 'Login'
+  const homeLabel = document.createElement('label')
+  document.getElementById('ImageButton1').after(homeLabel)
+  homeLabel.htmlFor = 'ImageButton1'
+  homeLabel.className = 'iconfont icon-home'
+  homeLabel.id = 'homeLabel'
+  document.getElementById('HyperLink1').innerHTML = '?'
+  document.getElementsByClassName('MenuTD')[0].remove()
+  document.querySelectorAll('#MenuTable>tbody>tr>td')[3].remove()
 }

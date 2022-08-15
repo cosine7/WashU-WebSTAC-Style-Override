@@ -2,7 +2,7 @@ const events = {
   insertCSS(tabId) {
     chrome.scripting.insertCSS({
       target: { tabId },
-      files: ['styles/style.css']
+      files: ['styles/style.css', 'styles/iconfont.css']
     })
   }
 }
