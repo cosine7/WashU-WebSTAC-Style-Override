@@ -1,5 +1,4 @@
 {
-  chrome.runtime.sendMessage('insertCSS')
   function switchTheme(theme) {
     document.body.className = `theme-${theme}`;
   }
@@ -21,4 +20,7 @@
   document.getElementsByClassName('MenuTD')[0].remove()
   document.querySelectorAll('#MenuTable>tbody>tr>td')[3].remove()
   document.querySelector('.SubMenu .MenuTD').remove()
+  const brs = document.querySelectorAll('div.Semesters>br')
+  brs[0].remove()
+  brs[1].remove()
 }

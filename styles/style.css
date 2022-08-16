@@ -24,7 +24,7 @@
   --gray-active: #a6a9ad;
 }
 .theme-light {
-  --bg-primary: #1E1E1E;
+  --bg-primary: white;
   --text-primary: black;
   --border-primary: #DCDFE6;
   --red-1: #F56C6C;
